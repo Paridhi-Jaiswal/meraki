@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    margin:0px;
+}
+
+header {
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    background-color:salmon;
+    
+}
+nav a {
+    display: block;
+    color: white;
+    text-decoration:tomato;
+    padding: 14px 20px;
+    float: left;
+    
+
+}
+section{
+    text-align: center;
+    padding-top: 40px;
+    
+}
+section:nth-child(even){
+    background-color:whitesmoke;
+}
+img{
+    padding: 0px 10px;
+}
+h3 {
+    padding-bottom: 30px;
+}
+footer {
+    overflow: hidden;
+    background-color: salmon;
+}
+footer a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    float: left;
+}
+.copyright{
+    float : right
+}
+
+.banner{
+    background-image: url(../images/poster3.jpg);
+    height: 20vw;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 30% ;
+    background-attachment: fixed;
+}
+.flex-align-right {
+    margin-left: auto;
+}
+.menu-btn:hover{
+    background-color: #ddd;
+    color: black;
+}
+.flex-align-right:hover {
+    background-color: #ddd;
+    color: black;
+}
+section h2 {
+    background: linear-gradient(to right, #21f4cb, #f4217a);
+    padding: 10px 55px;
+    color: white;
+}
+section h3 span{
+    background: linear-gradient(to right, #f42141, #f5d837);
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+}
+  
+  .carousel-cell {
+    width: 28%;
+    margin-right: 10px;
+    border-radius: 5px;
+    
+  }
+  
+
+@media screen and (max-width: 700px){
+    nav {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    .flex-align-right {
+        margin-left: 0;
+    }
+    
+}
